@@ -1,0 +1,79 @@
+body {
+  	text-align: center;
+  }
+
+  .my-active {
+  	display: none;
+  }
+
+  .top-img {
+  	width: 100%;
+  	min-width: 980px;
+  }
+
+  .top-img>img {
+  	width: 100%;
+  }
+
+  .shopping-list {
+  	width: 100%;
+  	left: 0px;
+  	position: absolute;
+  	top: 60px;
+  	z-index: 5;
+  	background: #FFFFFF;
+  	border-radius: 5px;
+  }
+
+  .row>.shops>.new-shopping {
+  	margin: 12px 0px;
+  	border: 1px orange solid;
+  	color: orange;
+  	line-height: 20px;
+  	height: 20px;
+  	width: 60%;
+  	margin-left: 20%;
+  }
+
+  .navs {
+  	display: flex;
+  	width: 100%;
+  	flex-wrap: nowrap;
+  }
+
+  .row>.shops>.new-img {
+  	width: 100%;
+  }
+
+  .row>.shops>.new-img>img {
+  	width: 90%;
+  }
+
+  .row>.shops>:nth-child(3) {
+  	font-size: 1.2em;
+  	color: rgba(25, 46, 89, 1);
+  }
+
+  .row>.shops>:nth-child(4) {
+  	font-size: 0.98em;
+  	color: orange;
+  }
+
+  .shopping-list {
+  	height: 0px;
+  	overflow: hidden;
+  	transition: all 1.21s;
+  }
+
+  .shopping-list>.row.show {
+  	display: flex;
+  }
+
+  .shopping-list>.row>:not(:first-child)::after {
+  	cursor: "sfgsd";
+  	width: 20px;
+  	height: 70%;
+  	margin-top: 15%;
+  	background: #486225;
+  	border-left: 2px solid royalblue;
+  }
